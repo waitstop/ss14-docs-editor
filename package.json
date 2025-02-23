@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
+    "build-gh-pages": "tsc && vite build --base=/dfm-app-landing/",
     "lint": "eslint .",
     "preview": "vite preview",
     "gen-types": "dotenv -e .env pnpm dlx supabase gen types typescript --project-id dbhgpivurygdhqktiuht > ./src/database.d.ts"
